@@ -33,8 +33,8 @@ const ImageCarousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
-      <div className="relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-white/10 backdrop-blur-sm">
+    <div className="relative w-full max-w-5xl mx-auto">
+      <div className="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl bg-white/10 backdrop-blur-sm">
         {images.map((image, index) => (
           <div
             key={index}
@@ -50,9 +50,9 @@ const ImageCarousel = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="max-h-48 md:max-h-64 w-auto object-contain mb-4"
+                className="max-h-72 md:max-h-80 lg:max-h-96 w-auto object-contain mb-6"
               />
-              <h3 className="text-xl md:text-2xl font-semibold text-white text-center">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-center">
                 {image.title}
               </h3>
             </div>

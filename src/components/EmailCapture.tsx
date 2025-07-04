@@ -50,13 +50,13 @@ const EmailCapture = () => {
           placeholder="Correo electrónico"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-1 h-12 text-base bg-white/90 backdrop-blur-sm border-white/20 focus:border-brand-teal-400 focus:ring-brand-teal-400"
+          className="flex-1 h-12 text-base bg-white/90 backdrop-blur-sm border-white/20 focus:border-brand-green-400 focus:ring-brand-green-400"
           disabled={isSubmitting}
         />
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="h-12 px-8 bg-brand-teal-600 hover:bg-brand-teal-700 text-white font-semibold transition-all duration-200 hover:scale-105"
+          className="h-12 px-8 bg-brand-green-600 hover:bg-brand-green-700 text-white font-semibold transition-all duration-200 hover:scale-105"
         >
           {isSubmitting ? "Enviando..." : "Apúntate"}
         </Button>
