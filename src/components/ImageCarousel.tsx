@@ -6,14 +6,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const ImageCarousel = () => {
   const images = [
     {
-      src: "/lovable-uploads/723d021a-3ca4-4e9e-ad92-ba123d6ffb6b.png",
-      alt: "GoService Logo",
-      title: "Nuestra Marca"
+      src: "/lovable-uploads/08f07e49-6701-4bfd-ba69-1950a98f2af2.png",
+      alt: "Find your perfect fitness professional",
+      title: "Encuentra Profesionales"
     },
     {
-      src: "/lovable-uploads/fa51a723-3d0f-4fcd-84c4-e96c00bc615d.png",
-      alt: "GoService App Interface",
-      title: "Encuentra Profesionales"
+      src: "/lovable-uploads/5b84c1e3-cc60-4a32-96f2-cc87685b2ece.png",
+      alt: "Personal Training Services",
+      title: "Servicios Personalizados"
     }
   ];
 
