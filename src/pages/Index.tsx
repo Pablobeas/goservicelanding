@@ -5,7 +5,7 @@ import ImageCarousel from "@/components/ImageCarousel";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-600 via-slate-500 to-slate-700 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Geometric Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full">

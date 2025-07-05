@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const EmailCapture = () => {
   const [email, setEmail] = useState("");
@@ -31,15 +32,44 @@ const EmailCapture = () => {
 
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const { error } = await supabase
+        .from('email_subscriptions')
+        .insert([{ email: email }]);
+
+      if (error) {
+        console.error('Error saving email:', error);
+        
+        if (error.code === '23505') {
+          toast({
+            title: "Email ya registrado",
+            description: "Este correo electrónico ya está en nuestra lista",
+            variant: "destructive"
+          });
+        } else {
+          toast({
+            title: "Error",
+            description: "Hubo un problema al guardar tu email. Inténtalo de nuevo.",
+            variant: "destructive"
+          });
+        }
+      } else {
+        toast({
+          title: "¡Gracias por suscribirte!",
+          description: "Te contactaremos pronto con más información",
+        });
+        setEmail("");
+      }
+    } catch (error) {
+      console.error('Unexpected error:', error);
       toast({
-        title: "¡Gracias por suscribirte!",
-        description: "Te contactaremos pronto con más información",
+        title: "Error",
+        description: "Hubo un problema inesperado. Inténtalo de nuevo.",
+        variant: "destructive"
       });
-      setEmail("");
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
