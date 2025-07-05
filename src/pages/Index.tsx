@@ -5,14 +5,14 @@ import ImageCarousel from "@/components/ImageCarousel";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-600 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 relative overflow-hidden">
       {/* Geometric Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-40 right-20 w-96 h-96 bg-emerald-300/20 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-20 left-20 w-80 h-80 bg-teal-300/15 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-64 h-64 bg-cyan-300/20 rounded-full blur-2xl"></div>
+          <div className="absolute top-10 left-10 w-72 h-72 bg-emerald-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-40 right-20 w-96 h-96 bg-teal-400/15 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-20 left-20 w-80 h-80 bg-green-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-64 h-64 bg-emerald-300/15 rounded-full blur-2xl"></div>
         </div>
         
         {/* Modern geometric shapes */}
