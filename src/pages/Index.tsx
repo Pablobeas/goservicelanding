@@ -33,8 +33,8 @@ const Index = () => {
         {/* Value Proposition */}
         <section className="text-center mb-14 sm:mb-20 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-snug drop-shadow-lg">
-            Haz que ofrecer tus servicios<br className="sm:hidden" />
-            sea más fácil. Reserva tu sitio.
+            <br classname="sm:hidden"/>
+            Haz que ofrecer tus servicios sea más fácil. Reserva tu sitio.
           </h1>
         </section>
 
