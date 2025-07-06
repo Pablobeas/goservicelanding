@@ -45,7 +45,7 @@ const Index = () => {
           </h2>
           <EmailCapture />
           <p className="text-white/90 mt-5 max-w-md mx-auto text-sm sm:text-base drop-shadow-sm">
-            Déjanos tu email y te contactaremos con más información sobre nuestros servicios
+            Déjanos tu email y te contactaremos con más información sobre nuestros servicios, además de un regalo especial
           </p>
         </section>
 
