@@ -10,9 +10,10 @@ const Index = () => {
       {/* Fixed Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-6 py-8 flex justify-center">
-          <Logo className="w-48 h-auto" />
+          <Logo />
         </div>
       </header>
+
 
 
       {/* Geometric Background Elements */}
