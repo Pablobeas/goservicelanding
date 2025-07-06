@@ -9,10 +9,11 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Fixed Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-6 py-6">
-          <Logo className="w-40 h-auto" />
+        <div className="container mx-auto px-6 py-8 flex justify-center">
+          <Logo className="w-48 h-auto" />
         </div>
       </header>
+
 
       {/* Geometric Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
