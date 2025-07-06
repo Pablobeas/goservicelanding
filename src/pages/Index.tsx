@@ -2,14 +2,50 @@ import Logo from "@/components/Logo";
 import EmailCapture from "@/components/EmailCapture";
 import ImageCarousel from "@/components/ImageCarousel";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Fixed Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 sm:px-6 py-6 flex justify-center">
-          <Logo />
+        <div className="container mx-auto px-4 sm:px-6 py-6 flex justify-between items-center">
+          {/* Navigation buttons - hidden on mobile */}
+          <nav className="hidden md:flex space-x-6">
+            <button 
+              onClick={() => scrollToSection('unete')}
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+            >
+              Únete
+            </button>
+            <button 
+              onClick={() => scrollToSection('descubre')}
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+            >
+              Descubre
+            </button>
+            <button 
+              onClick={() => scrollToSection('faq')}
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+            >
+              FAQ
+            </button>
+          </nav>
+          
+          {/* Logo centered */}
+          <div className="flex-1 flex justify-center md:justify-center">
+            <Logo />
+          </div>
+          
+          {/* Empty div to balance the flex layout on desktop */}
+          <div className="hidden md:block w-48"></div>
         </div>
       </header>
 
@@ -39,7 +75,7 @@ const Index = () => {
         </section>
 
         {/* Email Capture */}
-        <section className="text-center mb-16 sm:mb-20 animate-fade-in">
+        <section id="unete" className="text-center mb-16 sm:mb-20 animate-fade-in">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-5 drop-shadow-md">
             Únete a nuestra comunidad
           </h2>
@@ -50,7 +86,7 @@ const Index = () => {
         </section>
 
         {/* Carousel */}
-        <section className="animate-fade-in mb-16">
+        <section id="descubre" className="animate-fade-in mb-16">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white text-center mb-8 drop-shadow-md">
             Así será tu experiencia en GoService
           </h2>
@@ -58,8 +94,13 @@ const Index = () => {
         </section>
 
         {/* FAQ */}
-        <FAQ />
+        <section id="faq">
+          <FAQ />
+        </section>
       </main>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
