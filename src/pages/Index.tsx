@@ -6,6 +6,13 @@ import ImageCarousel from "@/components/ImageCarousel";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+      {/* Fixed Header with Logo */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-white/10">
+        <div className="container mx-auto px-6 py-4">
+          <Logo className="scale-50 transform-gpu" />
+        </div>
+      </header>
+
       {/* Geometric Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -21,13 +28,8 @@ const Index = () => {
         <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-emerald-200/20 rotate-45 rounded-full"></div>
       </div>
 
-      {/* Main Content Container */}
-      <div className="container mx-auto px-4 py-8 md:py-12 relative z-10">
-        {/* Logo Section - Smaller and less prominent */}
-        <div className="text-center mb-8 animate-fade-in">
-          <Logo className="mb-4" />
-        </div>
-
+      {/* Main Content Container with top padding for fixed header */}
+      <div className="container mx-auto px-6 pt-32 pb-8 relative z-10">
         {/* Value Proposition Section - Now the main focus */}
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-lg">

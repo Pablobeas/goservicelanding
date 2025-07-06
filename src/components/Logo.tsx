@@ -5,7 +5,7 @@ const Logo = ({ className = "" }: { className?: string }) => {
       <img 
         src="/lovable-uploads/61036253-22eb-4b25-8100-5ca6f9997157.png" 
         alt="GoService Logo" 
-        className="h-48 w-auto md:h-60 lg:h-72 xl:h-80 object-contain rounded-lg"
+        className="h-16 w-auto object-contain"
       />
     </div>
   );
