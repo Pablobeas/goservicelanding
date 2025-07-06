@@ -77,20 +77,6 @@ const ImageCarousel = () => {
           <ChevronRight className="h-5 w-5" />
         </Button>
       </div>
-      
-      <div className="flex justify-center mt-6 space-x-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-200 ${
-              index === currentIndex 
-                ? "bg-white" 
-                : "bg-white/40 hover:bg-white/60"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 };

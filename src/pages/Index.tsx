@@ -2,6 +2,7 @@
 import Logo from "@/components/Logo";
 import EmailCapture from "@/components/EmailCapture";
 import ImageCarousel from "@/components/ImageCarousel";
+import QuienesSomos from "@/components/QuienesSomos";
 
 const Index = () => {
   return (
@@ -9,7 +10,7 @@ const Index = () => {
       {/* Fixed Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-6 py-4">
-          <Logo className="scale-50 transform-gpu" />
+          <Logo />
         </div>
       </header>
 
@@ -49,12 +50,15 @@ const Index = () => {
         </div>
 
         {/* Image Carousel Section */}
-        <div className="animate-fade-in">
+        <div className="animate-fade-in mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold text-white text-center mb-8 drop-shadow-md">
             Descubre GoService
           </h2>
           <ImageCarousel />
         </div>
+
+        {/* Quienes Somos Section */}
+        <QuienesSomos />
       </div>
     </div>
   );
