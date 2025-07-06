@@ -34,9 +34,9 @@ const Index = () => {
       <div className="container mx-auto px-6 pt-32 pb-8 relative z-10">
         {/* Value Proposition Section - Now the main focus */}
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-lg">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-lg">
             Haz que ofrecer tus servicios sea más fácil. Reserva tu sitio.
-          </h1>
+          </h2>
         </div>
 
         {/* Email Capture Section */}
