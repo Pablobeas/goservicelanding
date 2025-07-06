@@ -41,7 +41,7 @@ const Index = () => {
         {/* Email Capture */}
         <section className="text-center mb-16 sm:mb-20 animate-fade-in">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-5 drop-shadow-md">
-            GoService te da visibilidad, contactos y libertad para gestionar tu trabajo. Sin comisiones. Sin intermediarios.
+            Únete a nuestra comunidad
           </h2>
           <EmailCapture />
           <p className="text-white/90 mt-5 max-w-md mx-auto text-sm sm:text-base drop-shadow-sm">
@@ -52,7 +52,7 @@ const Index = () => {
         {/* Carousel */}
         <section className="animate-fade-in mb-16">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white text-center mb-8 drop-shadow-md">
-            Descubre GoService
+            Así será tu experiencia en GoService
           </h2>
           <ImageCarousel />
         </section>
