@@ -21,19 +21,19 @@ const Index = () => {
           <nav className="hidden md:flex space-x-6">
             <button 
               onClick={() => scrollToSection('unete')}
-              className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+              className="text-white hover:text-white transition-colors text-lg font-semibold underline underline-offset-4 decoration-2 px-2 py-1"
             >
               Únete
             </button>
             <button 
               onClick={() => scrollToSection('descubre')}
-              className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+              className="text-white hover:text-white transition-colors text-lg font-semibold underline underline-offset-4 decoration-2 px-2 py-1"
             >
               Descubre
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
-              className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+              className="text-white hover:text-white transition-colors text-lg font-semibold underline underline-offset-4 decoration-2 px-2 py-1"
             >
               FAQ
             </button>
@@ -50,7 +50,7 @@ const Index = () => {
       </header>
 
       {/* Geometric Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-10 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-emerald-400/25 rounded-full blur-3xl"></div>
           <div className="absolute top-40 right-10 w-64 h-64 sm:w-96 sm:h-96 bg-teal-400/20 rounded-full blur-2xl"></div>
