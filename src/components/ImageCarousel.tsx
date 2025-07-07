@@ -6,14 +6,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const ImageCarousel = () => {
   const images = [
     {
-      src: "/lovable-uploads/08f07e49-6701-4bfd-ba69-1950a98f2af2.png",
-      alt: "Find your perfect fitness professional",
+      src: "/lovable-uploads/1f9e2cb4-3d87-45d9-ac13-3a77f1676884.png",
+      alt: "Buscar profesionales del bienestar",
       title: "Encuentra Profesionales"
     },
     {
-      src: "/lovable-uploads/5b84c1e3-cc60-4a32-96f2-cc87685b2ece.png",
-      alt: "Personal Training Services",
-      title: "Servicios Personalizados"
+      src: "/lovable-uploads/fd0f21c4-356d-4886-9028-95a559ba7631.png",
+      alt: "Conversaciones con profesionales",
+      title: "Conecta y Comunícate"
+    },
+    {
+      src: "/lovable-uploads/9809d87f-b127-4252-9b30-973fecf1c71d.png",
+      alt: "Perfil profesional completo",
+      title: "Perfiles Detallados"
     }
   ];
 
