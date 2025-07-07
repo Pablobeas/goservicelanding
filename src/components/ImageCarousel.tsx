@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ImageCarousel = () => {
@@ -51,15 +52,23 @@ const ImageCarousel = () => {
                   : "opacity-0 translate-x-full"
             }`}
           >
-            <div className="h-full flex flex-col items-center justify-center p-8">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="max-h-72 md:max-h-80 lg:max-h-96 w-auto object-contain mb-6"
-              />
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-center">
-                {image.title}
-              </h3>
+            <div className="h-full flex items-center justify-center p-4">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="max-h-full max-w-full w-auto h-auto object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[90vh] p-2">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         ))}
@@ -81,6 +90,13 @@ const ImageCarousel = () => {
         >
           <ChevronRight className="h-5 w-5" />
         </Button>
+      </div>
+      
+      {/* Título fuera del contenedor */}
+      <div className="text-center mt-6">
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white animate-fade-in">
+          {images[currentIndex].title}
+        </h3>
       </div>
     </div>
   );
