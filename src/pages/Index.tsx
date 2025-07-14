@@ -68,10 +68,11 @@ const Index = () => {
       <main className="container mx-auto px-4 sm:px-6 pt-40 pb-10 relative z-10">
         {/* Value Proposition */}
         <section className="text-center mb-14 sm:mb-20 animate-fade-in">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-snug drop-shadow-lg">
-            <br className="sm:hidden"/>
-            Haz que ofrecer tus servicios sea más fácil. Reserva tu sitio.
-          </h1>
+         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-snug drop-shadow-lg text-center animate-fade-in">
+  <span className="block">Haz que ofrecer tus <span className="text-teal-400">servicios</span></span>
+  <span className="block mt-2">sea más <span className="text-teal-400">fácil</span>. <span className="text-teal-400">Reserva</span> tu sitio.</span>
+</h1>
+
         </section>
 
         {/* Email Capture */}
