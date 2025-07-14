@@ -68,10 +68,15 @@ const Index = () => {
       <main className="container mx-auto px-4 sm:px-6 pt-40 pb-10 relative z-10">
         {/* Value Proposition */}
         <section className="text-center mb-14 sm:mb-20 animate-fade-in">
-         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-snug drop-shadow-lg text-center animate-fade-in">
-  <span className="block">Haz que ofrecer tus <span className="text-teal-400">servicios</span></span>
-  <span className="block mt-2">sea más <span className="text-teal-400">fácil</span>. <span className="text-teal-400">Reserva</span> tu sitio.</span>
+        <h1 className="text-center text-white font-bold leading-snug drop-shadow-lg">
+  <span className="block text-3xl sm:text-4xl md:text-5xl animate-fade-in">
+    Haz que ofrecer tus <span className="text-teal-400">servicios</span> sea más <span className="text-teal-400">fácil</span>.
+  </span>
+  <span className="block mt-6 text-2xl sm:text-3xl md:text-4xl text-teal-300 animate-fade-in delay-200">
+    Reserva tu sitio.
+  </span>
 </h1>
+
 
         </section>
 
