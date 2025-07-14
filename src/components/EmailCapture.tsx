@@ -77,7 +77,7 @@ const EmailCapture = () => {
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <Input
           type="email"
-          placeholder="Correo electrónico"
+          placeholder="Tu email profesional"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="h-12 text-base bg-white/95 backdrop-blur-sm border-white/30 focus:border-white focus:ring-white/50 shadow-lg"
@@ -88,7 +88,7 @@ const EmailCapture = () => {
           disabled={isSubmitting}
           className="h-12 px-8 bg-blue-500 hover:bg-blue-600 text-white font-semibold transition-all duration-200 hover:scale-105 shadow-lg"
         >
-          {isSubmitting ? "Enviando..." : "Apúntate"}
+          {isSubmitting ? "Enviando..." : "Reservar mi sitio"}
         </Button>
       </form>
     </div>
