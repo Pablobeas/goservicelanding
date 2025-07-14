@@ -65,7 +65,7 @@ const Index = () => {
       </div>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 sm:px-6 pt-40 pb-10 relative z-10">
+      <main className="container mx-auto px-4 sm:px-6 pt-60 pb-10 relative z-10">
         {/* Value Proposition */}
         <section className="text-center mb-14 sm:mb-20 animate-fade-in">
         <h1 className="text-center text-white font-bold leading-snug drop-shadow-lg">
@@ -87,7 +87,7 @@ const Index = () => {
           </h2>
           <EmailCapture />
           <p className="text-white/90 mt-5 max-w-md mx-auto text-sm sm:text-base drop-shadow-sm">
-            Déjanos tu email y te avisaremos  daremos recursos para crecer como profesional además de un regalo único
+            Déjanos tu email y te avisaremos y daremos recursos para crecer como profesional, además de un regalo único
           </p>
         </section>
 
